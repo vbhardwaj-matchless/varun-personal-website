@@ -7,7 +7,7 @@ Design Philosophy: Neo-Constructivism
 */
 
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ExternalLink, BookOpen } from "lucide-react";
+import { MessageCircle, ExternalLink, BookOpen, Linkedin, Mail } from "lucide-react";
 import { useState } from "react";
 import AskVarun from "@/components/AskVarun";
 
@@ -109,13 +109,22 @@ export default function Home() {
         <div className="absolute top-20 right-10 w-32 h-32 md:w-64 md:h-64 rounded-full bg-primary/10 -z-10" />
         
         <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl lg:text-8xl mb-6 md:mb-8 leading-tight">
-              Varun Bhardwaj
-            </h1>
-            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground/80">
-              Senior Quality Engineering Leader with a background in building and coaching quality practices in complex teams. Interested in systems thinking, AI, and human judgment in software delivery.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="flex-shrink-0">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305879557/UcEiAlnZavfEEqty.jpeg" 
+                alt="Varun Bhardwaj" 
+                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/20"
+              />
+            </div>
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-6xl lg:text-8xl mb-6 md:mb-8 leading-tight">
+                Varun Bhardwaj
+              </h1>
+              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground/80">
+                Senior Quality Engineering Leader with a background in building and coaching quality practices in complex teams. Interested in systems thinking, AI, and human judgment in software delivery.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -443,9 +452,29 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 md:py-12 bg-background border-t border-border">
         <div className="container">
-          <p className="text-center text-sm md:text-base text-muted-foreground">
-            © 2026 Varun Bhardwaj. This site articulates how I think about quality, systems, and delivery.
-          </p>
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://www.linkedin.com/in/vb-qe" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="hidden sm:inline">LinkedIn</span>
+              </a>
+              <a 
+                href="mailto:67vron@gmail.com" 
+                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+                <span className="hidden sm:inline">Contact</span>
+              </a>
+            </div>
+            <p className="text-center text-sm md:text-base text-muted-foreground">
+              © 2026 Varun Bhardwaj. This site articulates how I think about quality, systems, and delivery.
+            </p>
+          </div>
         </div>
       </footer>
 
