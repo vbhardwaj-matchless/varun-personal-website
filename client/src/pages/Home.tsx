@@ -118,7 +118,7 @@ export default function Home() {
               />
             </div>
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-6xl lg:text-8xl mb-6 md:mb-8 leading-tight">
+              <h1 className="text-3xl md:text-6xl lg:text-8xl mb-6 md:mb-8 leading-tight break-words">
                 Varun Bhardwaj
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-foreground/80">
@@ -139,7 +139,7 @@ export default function Home() {
         
         <div className="container">
           <div className="max-w-4xl md:ml-auto">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">How I Think</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">How I Think</h2>
             
             <div className="space-y-8 md:space-y-10">
               <div>
@@ -181,7 +181,7 @@ export default function Home() {
         
         <div className="container">
           <div className="max-w-4xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">What I Do</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">What I Do</h2>
             
             <p className="text-base md:text-lg leading-relaxed mb-8 md:mb-10 opacity-95">
               My work focuses on shifting teams from a traditional, assurance-heavy approach to a more dynamic, confidence-driven model of delivery. I achieve this by focusing on several key areas:
@@ -244,7 +244,7 @@ export default function Home() {
         
         <div className="container">
           <div className="max-w-4xl md:ml-auto">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">Principles & Values</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">Principles & Values</h2>
             
             <div className="space-y-10 md:space-y-12">
               <div>
@@ -327,7 +327,7 @@ export default function Home() {
       <section id="now" className="py-16 md:py-24 bg-accent text-accent-foreground diagonal-top relative">
         <div className="container">
           <div className="max-w-4xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">Now</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">Now</h2>
             
             <div className="space-y-4 md:space-y-5">
               <div className="flex items-start gap-4">
@@ -363,7 +363,7 @@ export default function Home() {
       <section id="blog" className="py-16 md:py-24 bg-background diagonal-top relative">
         <div className="container">
           <div className="max-w-4xl md:ml-auto">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">Blog</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">Blog</h2>
             
             <p className="text-base md:text-lg leading-relaxed mb-8 md:mb-10 text-muted-foreground">
               I write monthly articles exploring quality engineering, AI, and systems thinking.
@@ -401,7 +401,7 @@ export default function Home() {
       <section id="influences" className="py-16 md:py-24 bg-secondary text-secondary-foreground diagonal-top relative">
         <div className="container">
           <div className="max-w-4xl">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 md:mb-12">Influences</h2>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">Influences</h2>
             
             <p className="text-base md:text-lg leading-relaxed mb-8 md:mb-10 opacity-95">
               Books and thinkers shaping my approach to quality, systems, health, and life.
