@@ -41,7 +41,12 @@ export default function Home() {
               <a href="#beyond-engineering" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Beyond Engineering
               </a>
-
+              <a href="#case-studies" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Case Studies
+              </a>
+              <a href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Blog
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -75,6 +80,12 @@ export default function Home() {
                 </a>
                 <a href="#beyond-engineering" className="text-sm text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
                   Beyond Engineering
+                </a>
+                <a href="#case-studies" className="text-sm text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                  Case Studies
+                </a>
+                <a href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                  Blog
                 </a>
               </div>
             </div>
@@ -271,6 +282,152 @@ export default function Home() {
                 </div>
                 <div className="bg-card p-5 border border-border">
                   <p className="text-base font-medium">Family, balance, and contribution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Case Studies */}
+        <section id="case-studies" className="py-16 md:py-24">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-12">Case Studies</h2>
+              <div className="space-y-8">
+                {/* Case Study 1 */}
+                <div className="border border-border p-6 md:p-8">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                    <h3 className="text-xl font-semibold">[Project Name]</h3>
+                    <span className="text-sm text-muted-foreground">[Timeline: e.g., Q1 2024 - Q3 2024]</span>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Challenge</h4>
+                      <p className="text-base leading-relaxed">
+                        [Describe the problem, context, and why it mattered to the business]
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Approach</h4>
+                      <p className="text-base leading-relaxed">
+                        [Your methodology, key decisions, and how you led the effort]
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Measurable Outcomes</h4>
+                      <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
+                        <li>[Metric 1: e.g., Reduced deployment failures by 40%]</li>
+                        <li>[Metric 2: e.g., Improved release confidence score from 6.2 to 8.7]</li>
+                        <li>[Metric 3: e.g., Decreased mean time to detection by 60%]</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Case Study 2 */}
+                <div className="border border-border p-6 md:p-8">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                    <h3 className="text-xl font-semibold">[Project Name]</h3>
+                    <span className="text-sm text-muted-foreground">[Timeline: e.g., Q2 2023 - Q1 2024]</span>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Challenge</h4>
+                      <p className="text-base leading-relaxed">
+                        [Describe the problem, context, and why it mattered to the business]
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Approach</h4>
+                      <p className="text-base leading-relaxed">
+                        [Your methodology, key decisions, and how you led the effort]
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Measurable Outcomes</h4>
+                      <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
+                        <li>[Metric 1]</li>
+                        <li>[Metric 2]</li>
+                        <li>[Metric 3]</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Case Study 3 */}
+                <div className="border border-border p-6 md:p-8">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                    <h3 className="text-xl font-semibold">[Project Name]</h3>
+                    <span className="text-sm text-muted-foreground">[Timeline]</span>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Challenge</h4>
+                      <p className="text-base leading-relaxed">
+                        [Describe the problem, context, and why it mattered to the business]
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Approach</h4>
+                      <p className="text-base leading-relaxed">
+                        [Your methodology, key decisions, and how you led the effort]
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Measurable Outcomes</h4>
+                      <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
+                        <li>[Metric 1]</li>
+                        <li>[Metric 2]</li>
+                        <li>[Metric 3]</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Blog */}
+        <section id="blog" className="py-16 md:py-24 bg-muted">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <div className="flex items-center justify-between mb-12">
+                <h2 className="text-3xl md:text-4xl font-semibold">Blog</h2>
+                <a 
+                  href="https://medium.com/@70vron/feed" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                  </svg>
+                  RSS Feed
+                </a>
+              </div>
+              <div className="space-y-6">
+                {/* Blog Post 1 */}
+                <a 
+                  href="https://medium.com/@70vron/ai-didnt-make-me-faster-it-made-me-think-better-here-s-why-that-matters-for-qe-leaders-61bb9e05b1a8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border border-border p-6 hover:border-primary transition-colors"
+                >
+                  <div className="flex items-start justify-between gap-4 mb-3">
+                    <h3 className="text-lg font-semibold">AI Didn't Make Me Faster. It Made Me Think Better. Here's Why That Matters for QE Leaders.</h3>
+                    <span className="text-sm text-muted-foreground whitespace-nowrap">Jan 2026</span>
+                  </div>
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Most leaders adopt AI to save time. But the real value isn't speed—it's clarity. Here's how AI shifted my thinking from reactive firefighting to strategic systems design.
+                  </p>
+                </a>
+
+                {/* Placeholder for future posts */}
+                <div className="border border-dashed border-border p-6 text-center">
+                  <p className="text-sm text-muted-foreground">
+                    More articles coming soon. Publishing monthly on quality engineering, systems thinking, and delivery confidence.
+                  </p>
                 </div>
               </div>
             </div>
