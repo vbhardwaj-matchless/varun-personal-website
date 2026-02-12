@@ -158,7 +158,7 @@ export default function Home() {
         {/* Impact */}
         <section id="impact" className="py-16 md:py-24">
           <div className="container">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-semibold mb-12">Impact</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border border-border p-6 md:p-8">
