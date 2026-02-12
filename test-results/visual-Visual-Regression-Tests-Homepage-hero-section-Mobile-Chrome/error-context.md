@@ -1,0 +1,148 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "Varun Bhardwaj" [ref=e6] [cursor=pointer]:
+          - /url: "#home"
+        - button "Toggle menu" [ref=e7] [cursor=pointer]
+    - generic [ref=e14]:
+      - img "Varun Bhardwaj" [ref=e16]
+      - generic [ref=e17]:
+        - heading "Varun Bhardwaj" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Senior Quality Engineering Leader with a background in building and coaching quality practices in complex teams. Interested in systems thinking, AI, and human judgment in software delivery.
+    - generic [ref=e23]:
+      - heading "How I Think" [level=2] [ref=e24]
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "Quality as a System Property" [level=3] [ref=e27]
+          - paragraph [ref=e28]: I see quality as an emergent property of the entire system, not a specific phase of development or the responsibility of a single role. My focus is on understanding the system as a whole, including its feedback loops and second-order effects, to identify where quality is either created or degraded.
+        - generic [ref=e29]:
+          - heading "Approach to Delivery" [level=3] [ref=e30]
+          - paragraph [ref=e31]: My approach to delivery prioritizes rapid learning and adaptation. I optimize for fast feedback loops that provide clear signals, rather than relying on processes that create a false sense of certainty. I believe that confidence in delivery should be earned through tangible evidence and system visibility, not by gating progress through rigid checkpoints.
+        - generic [ref=e32]:
+          - heading "Trade-offs and Risk" [level=3] [ref=e33]
+          - paragraph [ref=e34]: I am comfortable navigating trade-offs, as they are an inherent part of any complex project. However, I am uncomfortable with hidden or unacknowledged risks. My goal is to make risks visible and explicit, so that we can make informed decisions about them.
+        - generic [ref=e35]:
+          - heading "AI and Human Judgment" [level=3] [ref=e36]
+          - paragraph [ref=e37]: I believe that AI should be used to amplify human judgment, not to replace human thinking. In areas where judgment, ethics, and context are critical, I advocate for keeping humans in the loop. AI's role is to augment our capabilities, not to automate our responsibilities.
+    - generic [ref=e41]:
+      - heading "What I Do" [level=2] [ref=e42]
+      - paragraph [ref=e43]: "My work focuses on shifting teams from a traditional, assurance-heavy approach to a more dynamic, confidence-driven model of delivery. I achieve this by focusing on several key areas:"
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "Designing Feedback Loops" [level=3] [ref=e46]
+          - paragraph [ref=e47]: I design and implement feedback mechanisms that surface risks and quality issues early in the development process, allowing for rapid course correction.
+        - generic [ref=e48]:
+          - heading "Identifying System Bottlenecks" [level=3] [ref=e49]
+          - paragraph [ref=e50]: I have a knack for identifying the often-normalized bottlenecks in a team's workflow that hinder quality and slow down delivery.
+        - generic [ref=e51]:
+          - heading "Translating Quality into Business Terms" [level=3] [ref=e52]
+          - paragraph [ref=e53]: I bridge the gap between technical quality concerns and business objectives, translating complex quality issues into language that leaders can understand and act upon.
+        - generic [ref=e54]:
+          - heading "Fostering a Culture of Ownership" [level=3] [ref=e55]
+          - paragraph [ref=e56]: I coach teams to take collective ownership of quality, rather than outsourcing it to a specific person or department.
+        - generic [ref=e57]:
+          - heading "Using Automation as an Enabler" [level=3] [ref=e58]
+          - paragraph [ref=e59]: I view automation as a powerful enabler of quality, not as the end goal in itself. My focus is on using automation strategically to create leverage.
+        - generic [ref=e60]:
+          - heading "Driving Cross-Functional Alignment" [level=3] [ref=e61]
+          - paragraph [ref=e62]: I work to create strong alignment between product, engineering, and quality, ensuring that everyone is working together towards the same definition of a high-quality product.
+    - generic [ref=e66]:
+      - heading "Principles & Values" [level=2] [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - heading "Core Principles" [level=3] [ref=e70]
+          - generic [ref=e71]:
+            - paragraph [ref=e74]:
+              - strong [ref=e75]: "Quality is a team responsibility:"
+              - text: I believe that quality is not the job of one person or team, but a collective responsibility shared by everyone involved in building a product.
+            - paragraph [ref=e78]:
+              - strong [ref=e79]: "Learning beats blaming:"
+              - text: When things go wrong, my focus is on understanding the root cause and learning from it, not on assigning blame.
+            - paragraph [ref=e82]:
+              - strong [ref=e83]: "Clarity over compliance:"
+              - text: I prioritize clear communication and a shared understanding of goals over blind adherence to process.
+            - paragraph [ref=e86]:
+              - strong [ref=e87]: "Evidence over opinion:"
+              - text: I advocate for making decisions based on data and evidence, rather than on personal opinions or assumptions.
+            - paragraph [ref=e90]:
+              - strong [ref=e91]: "Progress over perfection:"
+              - text: I believe in iterative progress and continuous improvement, rather than striving for an unattainable standard of perfection.
+        - generic [ref=e92]:
+          - heading "What I Avoid" [level=3] [ref=e93]
+          - generic [ref=e94]:
+            - paragraph [ref=e97]: Performative process and checkbox quality
+            - paragraph [ref=e100]: Environments where speed is valued but feedback is ignored
+        - generic [ref=e101]:
+          - heading "What I Value" [level=3] [ref=e102]
+          - generic [ref=e103]:
+            - paragraph [ref=e106]:
+              - strong [ref=e107]: "Psychological safety:"
+              - text: I believe that psychological safety is essential for teams to do their best work. People need to feel safe to speak up, ask questions, and make mistakes without fear of retribution.
+            - paragraph [ref=e110]:
+              - strong [ref=e111]: "Intellectual honesty:"
+              - text: I value intellectual honesty and a willingness to confront uncomfortable truths. I believe that this is the only way to make real progress.
+    - generic [ref=e114]:
+      - heading "Now" [level=2] [ref=e115]
+      - generic [ref=e116]:
+        - paragraph [ref=e119]: Exploring the potential of AI as a thinking partner for quality and delivery.
+        - paragraph [ref=e122]: Developing new ideas around AI-assisted quality coaching.
+        - paragraph [ref=e125]: Investigating new ways for teams to gain confidence in their work without sacrificing delivery speed.
+        - paragraph [ref=e128]: Refining my approach to communicating quality trade-offs to senior leaders.
+    - generic [ref=e131]:
+      - heading "Blog" [level=2] [ref=e132]
+      - paragraph [ref=e133]: I write monthly articles exploring quality engineering, AI, and systems thinking.
+      - article [ref=e135]:
+        - generic [ref=e136]:
+          - heading "AI Didn't Make Me Faster. It Made Me Think Better. Here's Why That Matters for QE Leaders" [level=3] [ref=e137]
+          - img [ref=e138]
+        - paragraph [ref=e142]: Over the past 18 months, I've embedded AI into nearly every part of my quality engineering workflow. The result? My confidence in the work I produce has increased dramatically. My speed of delivery? It's stayed roughly the same.
+        - generic [ref=e143]:
+          - generic [ref=e144]: February 2026 · 6 min read
+          - link "Read on Medium →" [ref=e145] [cursor=pointer]:
+            - /url: https://medium.com/@70vron/ai-didnt-make-me-faster-it-made-me-think-better-here-s-why-that-matters-for-qe-leaders-61bb9e05b1a8
+    - generic [ref=e148]:
+      - heading "Influences" [level=2] [ref=e149]
+      - paragraph [ref=e150]: Books and thinkers shaping my approach to quality, systems, health, and life.
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - heading "Books" [level=3] [ref=e153]:
+            - img [ref=e154]
+            - text: Books
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - paragraph [ref=e158]: Thinking, Fast and Slow
+              - paragraph [ref=e159]: Daniel Kahneman
+            - generic [ref=e160]:
+              - paragraph [ref=e161]: Outlive
+              - paragraph [ref=e162]: Peter Attia
+            - generic [ref=e163]:
+              - paragraph [ref=e164]: The Shift
+              - paragraph [ref=e165]: Erin
+            - generic [ref=e166]:
+              - paragraph [ref=e167]: Investing Insights
+              - paragraph [ref=e168]: Michael Yardney
+        - generic [ref=e169]:
+          - heading "Topics I Explore" [level=3] [ref=e170]
+          - generic [ref=e171]:
+            - generic [ref=e172]: Health & Wellness
+            - generic [ref=e173]: Philosophy
+            - generic [ref=e174]: Psychology
+            - generic [ref=e175]: Technology
+            - generic [ref=e176]: Parenting
+            - generic [ref=e177]: Investing
+    - contentinfo [ref=e178]:
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - link [ref=e182] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/vb-qe
+            - img [ref=e183]
+          - link [ref=e187] [cursor=pointer]:
+            - /url: mailto:67vron@gmail.com
+            - img [ref=e188]
+        - paragraph [ref=e191]: © 2026 Varun Bhardwaj. This site articulates how I think about quality, systems, and delivery.
+```

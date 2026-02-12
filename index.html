@@ -3,16 +3,55 @@
 
   <head>
     <meta charset="UTF-8" />
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Varun's Personal Website</title>    
+    <title>Varun Bhardwaj | Engineering Systems Leader</title>
+    <meta name="description" content="Engineering leader operating at the intersection of execution, organizational clarity, and business risk. Building delivery confidence in complex engineering systems." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vbhardwaj-matchless.github.io/varun-personal-website/" />
+    <meta property="og:title" content="Varun Bhardwaj | Senior Quality Engineering Leader" />
+    <meta property="og:description" content="Senior Quality Engineering Leader focused on systems thinking, AI, and human judgment in software delivery. Exploring confidence-driven quality practices." />
+    <meta property="og:image" content="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305879557/UcEiAlnZavfEEqty.jpeg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vbhardwaj-matchless.github.io/varun-personal-website/" />
+    <meta property="twitter:title" content="Varun Bhardwaj | Senior Quality Engineering Leader" />
+    <meta property="twitter:description" content="Senior Quality Engineering Leader focused on systems thinking, AI, and human judgment in software delivery. Exploring confidence-driven quality practices." />
+    <meta property="twitter:image" content="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305879557/UcEiAlnZavfEEqty.jpeg" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-DtRbC2Z4.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BBYWrY2N.css">
-    <script src="/__manus__/debug-collector.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/varun-personal-website/assets/index-CKq0T3xA.js"></script>
+    <link rel="stylesheet" crossorigin href="/varun-personal-website/assets/index-CxHrb5uX.css">
   </head>
 
   <body>
