@@ -1,14 +1,7 @@
 import { useState } from "react";
-import { useAuth } from "@/_core/hooks/useAuth";
 import { Menu, X, Linkedin, Mail } from "lucide-react";
-import { AskVarunAssistant } from "@/components/AskVarunAssistant";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading: authLoading, error, isAuthenticated, logout } = useAuth();
-
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -291,95 +284,74 @@ export default function Home() {
         {/* Case Studies */}
         <section id="case-studies" className="py-16 md:py-24">
           <div className="container">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-semibold mb-12">Case Studies</h2>
               <div className="space-y-8">
                 {/* Case Study 1 */}
                 <div className="border border-border p-6 md:p-8">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                    <h3 className="text-xl font-semibold">[Project Name]</h3>
-                    <span className="text-sm text-muted-foreground">[Timeline: e.g., Q1 2024 - Q3 2024]</span>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-4">[Project Name]</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Challenge</h4>
-                      <p className="text-base leading-relaxed">
-                        [Describe the problem, context, and why it mattered to the business]
-                      </p>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Problem Statement</h4>
+                      <p className="text-base leading-relaxed">[Description of the challenge or problem]</p>
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Approach</h4>
-                      <p className="text-base leading-relaxed">
-                        [Your methodology, key decisions, and how you led the effort]
-                      </p>
+                      <p className="text-base leading-relaxed">[How you approached solving it]</p>
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Measurable Outcomes</h4>
-                      <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
-                        <li>[Metric 1: e.g., Reduced deployment failures by 40%]</li>
-                        <li>[Metric 2: e.g., Improved release confidence score from 6.2 to 8.7]</li>
-                        <li>[Metric 3: e.g., Decreased mean time to detection by 60%]</li>
-                      </ul>
+                      <p className="text-base leading-relaxed">[Specific metrics and results]</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Timeline</h4>
+                      <p className="text-base leading-relaxed">[Duration and key milestones]</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Case Study 2 */}
                 <div className="border border-border p-6 md:p-8">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                    <h3 className="text-xl font-semibold">[Project Name]</h3>
-                    <span className="text-sm text-muted-foreground">[Timeline: e.g., Q2 2023 - Q1 2024]</span>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-4">[Project Name]</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Challenge</h4>
-                      <p className="text-base leading-relaxed">
-                        [Describe the problem, context, and why it mattered to the business]
-                      </p>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Problem Statement</h4>
+                      <p className="text-base leading-relaxed">[Description of the challenge or problem]</p>
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Approach</h4>
-                      <p className="text-base leading-relaxed">
-                        [Your methodology, key decisions, and how you led the effort]
-                      </p>
+                      <p className="text-base leading-relaxed">[How you approached solving it]</p>
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Measurable Outcomes</h4>
-                      <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
-                        <li>[Metric 1]</li>
-                        <li>[Metric 2]</li>
-                        <li>[Metric 3]</li>
-                      </ul>
+                      <p className="text-base leading-relaxed">[Specific metrics and results]</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Timeline</h4>
+                      <p className="text-base leading-relaxed">[Duration and key milestones]</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Case Study 3 */}
                 <div className="border border-border p-6 md:p-8">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                    <h3 className="text-xl font-semibold">[Project Name]</h3>
-                    <span className="text-sm text-muted-foreground">[Timeline]</span>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-4">[Project Name]</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Challenge</h4>
-                      <p className="text-base leading-relaxed">
-                        [Describe the problem, context, and why it mattered to the business]
-                      </p>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Problem Statement</h4>
+                      <p className="text-base leading-relaxed">[Description of the challenge or problem]</p>
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Approach</h4>
-                      <p className="text-base leading-relaxed">
-                        [Your methodology, key decisions, and how you led the effort]
-                      </p>
+                      <p className="text-base leading-relaxed">[How you approached solving it]</p>
                     </div>
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Measurable Outcomes</h4>
-                      <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
-                        <li>[Metric 1]</li>
-                        <li>[Metric 2]</li>
-                        <li>[Metric 3]</li>
-                      </ul>
+                      <p className="text-base leading-relaxed">[Specific metrics and results]</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-muted-foreground mb-2">Timeline</h4>
+                      <p className="text-base leading-relaxed">[Duration and key milestones]</p>
                     </div>
                   </div>
                 </div>
@@ -391,43 +363,40 @@ export default function Home() {
         {/* Blog */}
         <section id="blog" className="py-16 md:py-24 bg-muted">
           <div className="container">
-            <div className="max-w-3xl mx-auto">
-              <div className="flex items-center justify-between mb-12">
-                <h2 className="text-3xl md:text-4xl font-semibold">Blog</h2>
-                <a 
-                  href="https://medium.com/@70vron/feed" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                  </svg>
-                  RSS Feed
-                </a>
-              </div>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-12">Blog</h2>
               <div className="space-y-6">
-                {/* Blog Post 1 */}
-                <a 
-                  href="https://medium.com/@70vron/ai-didnt-make-me-faster-it-made-me-think-better-here-s-why-that-matters-for-qe-leaders-61bb9e05b1a8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block border border-border p-6 hover:border-primary transition-colors"
-                >
-                  <div className="flex items-start justify-between gap-4 mb-3">
-                    <h3 className="text-lg font-semibold">AI Didn't Make Me Faster. It Made Me Think Better. Here's Why That Matters for QE Leaders.</h3>
-                    <span className="text-sm text-muted-foreground whitespace-nowrap">Jan 2026</span>
+                {/* Latest Article */}
+                <article className="bg-card border border-border p-6 md:p-8">
+                  <div className="flex items-start justify-between gap-4 mb-4">
+                    <h3 className="text-xl font-semibold">
+                      <a 
+                        href="https://medium.com/@70vron/ai-didnt-make-me-faster-it-made-me-think-better-here-s-why-that-matters-for-qe-leaders-61bb9e05b1a8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        AI Didn't Make Me Faster, It Made Me Think Better: Here's Why That Matters for QE Leaders
+                      </a>
+                    </h3>
                   </div>
-                  <p className="text-base leading-relaxed text-muted-foreground">
-                    Most leaders adopt AI to save time. But the real value isn't speed—it's clarity. Here's how AI shifted my thinking from reactive firefighting to strategic systems design.
+                  <p className="text-muted-foreground text-sm mb-4">Published on Medium</p>
+                  <p className="text-base leading-relaxed mb-4">
+                    Exploring how AI tools are changing the way quality engineering leaders think, plan, and execute rather than just speeding up existing processes.
                   </p>
-                </a>
+                  <a 
+                    href="https://medium.com/@70vron/ai-didnt-make-me-faster-it-made-me-think-better-here-s-why-that-matters-for-qe-leaders-61bb9e05b1a8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline text-sm font-medium"
+                  >
+                    Read on Medium →
+                  </a>
+                </article>
 
                 {/* Placeholder for future posts */}
-                <div className="border border-dashed border-border p-6 text-center">
-                  <p className="text-sm text-muted-foreground">
-                    More articles coming soon. Publishing monthly on quality engineering, systems thinking, and delivery confidence.
-                  </p>
+                <div className="text-center py-8">
+                  <p className="text-muted-foreground">More articles coming soon. Follow me on <a href="https://medium.com/@70vron" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Medium</a> for updates.</p>
                 </div>
               </div>
             </div>
@@ -467,9 +436,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      
-      {/* Ask Varun AI Assistant */}
-      <AskVarunAssistant />
     </div>
   );
 }

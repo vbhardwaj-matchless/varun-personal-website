@@ -10,9 +10,22 @@ test.describe('Visual Regression Tests', () => {
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForTimeout(500);
     
-    // Take screenshot of hero section
-    const hero = page.locator('section').first();
+    // Take screenshot of hero section (first section with bg-primary)
+    const hero = page.locator('section.bg-primary').first();
     await expect(hero).toHaveScreenshot('hero-section.png', {
+      maxDiffPixels: 100,
+    });
+  });
+
+  test('Why I Care section', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    
+    await page.locator('#why-i-care').scrollIntoViewIfNeeded();
+    await page.waitForTimeout(500);
+    
+    const section = page.locator('#why-i-care');
+    await expect(section).toHaveScreenshot('why-i-care-section.png', {
       maxDiffPixels: 100,
     });
   });
@@ -21,51 +34,76 @@ test.describe('Visual Regression Tests', () => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
     
-    // Scroll to section
-    await page.locator('#thinking').scrollIntoViewIfNeeded();
+    await page.locator('#how-i-think').scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     
-    const section = page.locator('#thinking');
+    const section = page.locator('#how-i-think');
     await expect(section).toHaveScreenshot('how-i-think-section.png', {
       maxDiffPixels: 100,
     });
   });
 
-  test('What I Do section', async ({ page }) => {
+  test('Impact section', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
     
-    await page.locator('#capability').scrollIntoViewIfNeeded();
+    await page.locator('#impact').scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     
-    const section = page.locator('#capability');
-    await expect(section).toHaveScreenshot('what-i-do-section.png', {
+    const section = page.locator('#impact');
+    await expect(section).toHaveScreenshot('impact-section.png', {
       maxDiffPixels: 100,
     });
   });
 
-  test('Principles & Values section', async ({ page }) => {
+  test('How I Lead section', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
     
-    await page.locator('#principles').scrollIntoViewIfNeeded();
+    await page.locator('#how-i-lead').scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     
-    const section = page.locator('#principles');
-    await expect(section).toHaveScreenshot('principles-section.png', {
+    const section = page.locator('#how-i-lead');
+    await expect(section).toHaveScreenshot('how-i-lead-section.png', {
       maxDiffPixels: 100,
     });
   });
 
-  test('Now section', async ({ page }) => {
+  test('Strategic Direction section', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
     
-    await page.locator('#now').scrollIntoViewIfNeeded();
+    await page.locator('#strategic-direction').scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
     
-    const section = page.locator('#now');
-    await expect(section).toHaveScreenshot('now-section.png', {
+    const section = page.locator('#strategic-direction');
+    await expect(section).toHaveScreenshot('strategic-direction-section.png', {
+      maxDiffPixels: 100,
+    });
+  });
+
+  test('Beyond Engineering section', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    
+    await page.locator('#beyond-engineering').scrollIntoViewIfNeeded();
+    await page.waitForTimeout(500);
+    
+    const section = page.locator('#beyond-engineering');
+    await expect(section).toHaveScreenshot('beyond-engineering-section.png', {
+      maxDiffPixels: 100,
+    });
+  });
+
+  test('Case Studies section', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    
+    await page.locator('#case-studies').scrollIntoViewIfNeeded();
+    await page.waitForTimeout(500);
+    
+    const section = page.locator('#case-studies');
+    await expect(section).toHaveScreenshot('case-studies-section.png', {
       maxDiffPixels: 100,
     });
   });
@@ -79,19 +117,6 @@ test.describe('Visual Regression Tests', () => {
     
     const section = page.locator('#blog');
     await expect(section).toHaveScreenshot('blog-section.png', {
-      maxDiffPixels: 100,
-    });
-  });
-
-  test('Influences section', async ({ page }) => {
-    await page.goto('/');
-    await page.waitForLoadState('networkidle');
-    
-    await page.locator('#influences').scrollIntoViewIfNeeded();
-    await page.waitForTimeout(500);
-    
-    const section = page.locator('#influences');
-    await expect(section).toHaveScreenshot('influences-section.png', {
       maxDiffPixels: 100,
     });
   });
