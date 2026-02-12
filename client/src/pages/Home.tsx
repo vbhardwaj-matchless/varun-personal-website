@@ -49,6 +49,9 @@ export default function Home() {
             <a href="#now" className="text-sm hover:text-primary transition-colors">
               Now
             </a>
+            <a href="#case-studies" className="text-sm hover:text-primary transition-colors">
+              Case Studies
+            </a>
             <a href="#blog" className="text-sm hover:text-primary transition-colors">
               Blog
             </a>
@@ -82,6 +85,9 @@ export default function Home() {
               </a>
               <a href="#now" className="text-sm hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Now
+              </a>
+              <a href="#case-studies" className="text-sm hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Case Studies
               </a>
               <a href="#blog" className="text-sm hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Blog
@@ -354,6 +360,96 @@ export default function Home() {
                   Refining my approach to communicating quality trade-offs to senior leaders.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section id="case-studies" className="py-16 md:py-24 bg-accent text-accent-foreground diagonal-top relative">
+        <div className="container">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 md:mb-12 break-words">Case Studies</h2>
+            
+            <p className="text-base md:text-lg leading-relaxed mb-8 md:mb-10 opacity-95">
+              Real examples of quality transformation work. (Content coming soon)
+            </p>
+
+            <div className="space-y-8 md:space-y-10">
+              {/* Case Study 1 */}
+              <article className="bg-background/10 p-6 md:p-8">
+                <h3 className="text-2xl md:text-3xl mb-4">Case Study 1: [Project Name]</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Problem</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [Description of the quality challenge or problem the team faced]
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Approach</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [How you approached the problem, what methods or frameworks you used]
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Outcome</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [Measurable results, impact on team or delivery]
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              {/* Case Study 2 */}
+              <article className="bg-background/10 p-6 md:p-8">
+                <h3 className="text-2xl md:text-3xl mb-4">Case Study 2: [Project Name]</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Problem</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [Description of the quality challenge or problem the team faced]
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Approach</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [How you approached the problem, what methods or frameworks you used]
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Outcome</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [Measurable results, impact on team or delivery]
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              {/* Case Study 3 */}
+              <article className="bg-background/10 p-6 md:p-8">
+                <h3 className="text-2xl md:text-3xl mb-4">Case Study 3: [Project Name]</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Problem</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [Description of the quality challenge or problem the team faced]
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Approach</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [How you approached the problem, what methods or frameworks you used]
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-semibold mb-2">Outcome</h4>
+                    <p className="text-base md:text-lg leading-relaxed opacity-90">
+                      [Measurable results, impact on team or delivery]
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>

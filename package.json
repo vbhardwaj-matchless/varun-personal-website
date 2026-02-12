@@ -14,7 +14,9 @@
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "test:update": "playwright test --update-snapshots",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "lighthouse": "lhci autorun",
+    "lighthouse:local": "pnpm run build && lhci autorun"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -71,6 +73,7 @@
   },
   "devDependencies": {
     "@builder.io/vite-plugin-jsx-loc": "^0.1.1",
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.58.2",
     "@tailwindcss/typography": "^0.5.15",
     "@tailwindcss/vite": "^4.1.3",
