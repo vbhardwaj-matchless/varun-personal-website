@@ -82,17 +82,19 @@ This testing setup prevents issues like:
 
 ## CI/CD Integration
 
-To run tests in CI/CD:
-```yaml
-- name: Install dependencies
-  run: pnpm install
-  
-- name: Install Playwright browsers
-  run: pnpm exec playwright install chromium
-  
-- name: Run visual tests
-  run: pnpm run test
-```
+GitHub Actions workflow is configured in `.github/workflows/visual-tests.yml`.
+
+The workflow:
+- Runs automatically on pull requests and pushes to main
+- Installs dependencies and Playwright browsers
+- Executes all visual tests
+- Uploads test reports and screenshots if tests fail
+
+**Viewing failed test results:**
+1. Go to the Actions tab in GitHub
+2. Click on the failed workflow run
+3. Download the `playwright-report` artifact
+4. Extract and open `index.html` to see visual diffs
 
 ## Troubleshooting
 
