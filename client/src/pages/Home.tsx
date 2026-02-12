@@ -1,8 +1,14 @@
 import { useState } from "react";
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Menu, X, Linkedin, Mail } from "lucide-react";
+import { AskVarunAssistant } from "@/components/AskVarunAssistant";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading: authLoading, error, isAuthenticated, logout } = useAuth();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -35,6 +41,7 @@ export default function Home() {
               <a href="#beyond-engineering" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Beyond Engineering
               </a>
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -79,13 +86,22 @@ export default function Home() {
         {/* Hero Section */}
         <section className="py-20 md:py-32 bg-primary text-primary-foreground">
           <div className="container">
-            <div className="max-w-4xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Building Delivery Confidence in Complex Engineering Systems
-              </h1>
-              <p className="text-lg md:text-xl leading-relaxed opacity-95 max-w-3xl">
-                Engineering leader operating at the intersection of execution, organizational clarity, and business risk. Focused on building environments where teams move fast without losing signal or stability.
-              </p>
+            <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl">
+              <div className="flex-1">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                  Building Delivery Confidence in Complex Engineering Systems
+                </h1>
+                <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                  Engineering leader operating at the intersection of execution, organizational clarity, and business risk. Focused on building environments where teams move fast without losing signal or stability.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305879557/UcEiAlnZavfEEqty.jpeg"
+                  alt="Varun Bhardwaj"
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-primary-foreground/20"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -294,6 +310,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      {/* Ask Varun AI Assistant */}
+      <AskVarunAssistant />
     </div>
   );
 }
